@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/list-svgrepo-com.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="todo-container">
+        <h1 class="todo-title">To-Do List</h1>
+        <div class="todo-input-container">
+          <input type="text" class="todo-input" placeholder="Enter your todo" />
+          <button class="todo-button">Add</button>
+        </div>
+
+        <input type="text" id="search" placeholder="Search" />
+
+        <div class="display-todo">
+          <ul class="todo-list"></ul>
+        </div>
+
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="list-item list-item--active" id="all">All</li>
+            <li class="list-item" id="completed">Completed</li>
+            <li class="list-item" id="remaining">Remaining</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
